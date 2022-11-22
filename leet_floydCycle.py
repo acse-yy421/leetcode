@@ -7,7 +7,7 @@ def cycle(nums):
         fast = nums[nums[fast]]#every iteration, it goes 2 steps
         if slow==fast:
             break
-    slow2=0
+    slow2=0 # when fast and slow ptr meets, fast has finished its job. Start another slow ptr, because x=y, they have the step length
     while True:
         #x=y, x: the distance between where slowPtr and fastPtr meets and cycling starting point, y:distance between start point and cycling start point
         slow = nums[slow]
